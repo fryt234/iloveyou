@@ -5,9 +5,9 @@ import async_timeout
 
 api_id = "22420294"
 api_hash = "4e82424ae1a3744580c3daee7f2cb27f"
-
+text = "привет"
 app = Client("account", api_id, api_hash)
-@app.on_message(filters.regex("сердечки"))
+@app.on_message(filters.regex("сердечко"))
 async def heart(client, message):
 
     await asyncio.sleep(1)
@@ -177,7 +177,7 @@ async def heart(client, message):
     await asyncio.sleep(0.3)
     await message.edit_text("❤️❤️❤️❤️love❤️❤️❤️❤️☁️☁️")
     await asyncio.sleep(0.3)
-    await message.edit_text("❤️❤️i❤️❤️love❤️❤️you❤️❤️❤️❤️")
+    await message.edit_text("❤️❤️i❤️❤️love❤️❤️you❤️❤️❤️❤️", "@Aryt7777777")
 
 
 
